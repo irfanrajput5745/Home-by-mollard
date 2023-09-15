@@ -1,0 +1,1091 @@
+@import url('../css/bootstrap.css');
+@import url('../css/animate.css');
+@import url('../css/jquery.fancybox.min.css');
+@import url('../css/slick.css');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://unpkg.com/aos@next/dist/aos.css');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: #fffbf2;
+}
+
+.container-fluid {
+    padding: 0px 30px;
+}
+
+a {
+    cursor: pointer !important;
+}
+
+h6 {
+    font-family: 'Jost', sans-serif;
+}
+
+.theme-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.theme-btn {
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition: all ease 0.4s;
+    font-size: 16px !important;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.theme-btn:hover {
+    background-color: #F20B14;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-5px);
+    border: 1px solid #F20B14;
+}
+
+
+
+
+/* Header */
+.header_icons ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    justify-content: end;
+}
+
+.navigation li:nth-child(7) a::before {
+    display: none;
+}
+
+.navigation li:nth-child(8) a::before {
+    display: none;
+}
+
+.header_icons ul li a i:hover {
+    color: red;
+    transition: 0.50s ease;
+    transform: translateY(-8px);
+
+}
+
+.header_icons ul li a i {
+    transition: 0.50s ease;
+    cursor: pointer !important;
+}
+
+.header_icons ul li a {
+    font-size: 27px;
+    color: black;
+}
+
+.navigation ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer !important;
+}
+
+.navigation ul li a i {
+    font-size: 32px;
+    color: black;
+    transition: 0.50s ease;
+    cursor: pointer !IMPORTANT;
+}
+
+.navigation ul li a i:hover {
+    color: red;
+    transition: 0.50s ease;
+    transform: translateY(-8px);
+}
+
+.navigation ul li a img {
+    width: 70px;
+    cursor: pointer !important;
+    transition: 0.50s ease;
+}
+
+.navigation ul li a img:hover {
+    transform: scale(1.2);
+    cursor: pointer !important;
+    filter: drop-shadow(2px 4px 6px black);
+    transition: 0.50s ease;
+}
+
+header {
+    padding: 30px 0px;
+}
+
+.navigation ul li a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    content: "";
+    background: red;
+    height: 2px;
+    transition: 0.50s ease;
+}
+
+.navigation ul li a:hover:before {
+    width: 100%;
+    transition: 0.50s ease;
+}
+
+/* Header End */
+
+/* Banner Start */
+.main_banner {
+    background: url(../images/banner-bg.png) center center/cover no-repeat;
+    height: 742px;
+    border-radius: 30px 30px 0px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.banner_scroll_down_img img {
+    width: 80%;
+}
+
+div#scroll-down-animation h2 {
+    font-size: 31px;
+    font-weight: 300;
+    text-transform: uppercase;
+    z-index: 9999999999999999;
+    color: black;
+}
+
+div#scroll-down-animation h2 {
+    -webkit-animation: mymove 2s ease 0.5s infinite;
+    animation: mymove 2s ease 0.5s infinite;
+}
+
+
+.banner_scroll_down_img {
+    position: absolute;
+    right: -58px;
+    z-index: 1;
+}
+
+.banner_content img {
+    width: 60%;
+}
+
+.banner_content .theme-group {
+    justify-content: center;
+}
+
+.banner_content p {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.banner_people {
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+}
+
+.banner_people img {
+    width: 70%;
+}
+
+.banner_content {
+    -webkit-animation: mymove 2s ease 0.5s infinite;
+    animation: mymove 2s ease 0.5s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.banner_people {
+
+    -webkit-animation: mymove 2s ease 0.5s infinite;
+    animation: mymove 2s ease 0.5s infinite;
+}
+
+#scroll-down-animation {
+    position: absolute;
+    bottom: -80px;
+    right: -16%;
+    transform: translate(-50%, -50%);
+    color: #fffbf2;
+    display: flex;
+    z-index: 999999;
+    padding: 50px;
+    gap: 40px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+
+
+.mouse {
+    margin: 0 auto;
+    display: block;
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 60px;
+    width: 40px;
+    position: relative;
+    color: black;
+    overflow: hidden;
+}
+
+.scroll_down_move {
+    position: absolute;
+    background-color: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-50%, 10px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translate(-50%, 40px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 80px);
+        opacity: 0;
+    }
+}
+
+/* /* Banner End */
+
+/* About Us Start */
+.about_us_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.main_about_us.second {
+    padding: 0;
+}
+
+.main_about_us {
+    padding: 100px 0px;
+}
+
+.about_us_content a {
+    color: black;
+    border: 1px solid black;
+}
+
+.about_us_content h6 {
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+
+.about_us_content h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 60px;
+    color: black;
+}
+
+.about_us_content h1 span {
+    font-weight: 800;
+}
+
+.about_us_content p {
+    font-size: 16px;
+    margin: 20px 0px;
+    color: dimgray;
+    text-transform: capitalize;
+}
+
+.about_us_content {
+    position: relative;
+}
+
+.about_us_circle_icon {
+    position: absolute;
+    top: 0;
+    left: 60px;
+}
+
+.about_us_content ul {
+    display: inline-block;
+    padding: 0;
+    margin: 10px 20px;
+}
+
+.about_us_content ul li {
+    padding: 6px 0px;
+    color: gray;
+}
+
+.about_us_content ul li span {
+    font-weight: 700;
+}
+
+/* About Us End */
+/* Counter Start */
+.main_counter {
+    height: 260px;
+    background: url(../images/counter-bg.png) center center/cover no-repeat;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#counter {
+    -webkit-animation: mymove 2s ease 0.5s infinite;
+    animation: mymove 2s ease 0.5s infinite;
+}
+
+#counter {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+#counter .item {
+    width: 200px;
+    padding: 35px 40px;
+    text-align: center;
+}
+
+#counter .item .count {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 50px;
+}
+
+#counter .item h3 {
+    color: white;
+    text-transform: capitalize;
+    height: 50px;
+    font-size: 18px;
+}
+
+/* Counter End */
+
+/* Top Search Start */
+
+.top_searches_card_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.top_searches_card_content h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main_top_searches {
+    padding: 100px 0px;
+}
+
+.top_searches_heading h6 {
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+
+.top_searches_heading h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 60px;
+    color: black;
+}
+
+.top_searches_heading {
+    position: relative;
+    margin: 0px 0px 30px 100px;
+}
+
+.about_us_circle_icon1 {
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+
+.top_searches_card {
+    position: relative;
+    transition: all 0.6s ease;
+    margin: 0px 10px;
+
+}
+
+.top_searches_card_content {
+    position: absolute;
+    top: 7%;
+    background: #000000ad;
+    width: 85%;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    height: 280px;
+    left: 7%;
+    color: white;
+    text-align: center;
+    padding: 40px 5px;
+    transition: 0.50s ease;
+}
+
+.top_searches_card_content .theme-group {
+    justify-content: center;
+}
+
+.top_searches_card:hover .top_searches_card_content {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.6s ease !IMPORTANT;
+}
+
+.top_searches_card:hover .main_top_searches_card_content h3 {
+    opacity: 0;
+    transition: all 0.3s ease !IMPORTANT;
+}
+
+.main_top_searches_card_content h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.20s ease !IMPORTANT;
+}
+
+.top_searches_card_img {
+    height: 350px;
+}
+
+button.slick-prev.slick-arrow {
+    position: absolute;
+    top: -70px;
+    right: 150px;
+    font-size: 0;
+    background: red;
+    border: none;
+    border-radius: 8px;
+}
+
+button.slick-next.slick-arrow {
+    position: absolute;
+    top: -70px;
+    right: 100px;
+    font-size: 0;
+    background: red;
+    border: none;
+    border-radius: 8px;
+}
+
+button.slick-prev.slick-arrow::before {
+    content: "\f060";
+    display: block;
+    height: 42px;
+    width: 32px;
+    color: white;
+    font-size: 30px;
+    font-family: 'FontAwesome';
+}
+
+button.slick-next.slick-arrow::after {
+    content: "\f061";
+    display: block;
+    height: 42px;
+    width: 32px;
+    color: white;
+    font-size: 30px;
+    font-family: 'FontAwesome';
+}
+
+/* Top Search End */
+/* Find out the value Start */
+.main_find_out_the_value {
+    background: url(../images/find_out_the_value_bg.png) center center/cover no-repeat;
+    padding: 48px 0px;
+    text-align: center;
+    color: white;
+    margin: 100px 0px;
+    position: relative;
+}
+
+.fint_out_the_value_content h6 {
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.fint_out_the_value_content h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.fint_out_the_value_content p {
+    margin: 15px auto;
+    width: 50%;
+}
+
+.fint_out_the_value_content .theme-group {
+    justify-content: center;
+}
+
+.about_us_circle_icon2 {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+}
+
+.about_us_circle_icon3 {
+    position: absolute;
+    top: 50px;
+    right: 97px;
+    transform: rotate(180deg);
+}
+
+.about_us_circle_icon3 IMG {
+    WIDTH: 20%;
+}
+
+.about_us_circle_icon2 img {
+    width: 20%;
+}
+
+/* Find out the value End */
+
+/* footer start */
+.footer_logo img {
+    width: 180px;
+}
+
+.footer_logo p {
+    margin: 30px 0px;
+    font-size: 13px;
+    width: 70%;
+    color: darkgray;
+}
+
+.footer_icons ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.footer_icons ul li a {
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+}
+
+.main_footer {
+    background: #101010;
+    color: white;
+    padding: 50px 0px;
+}
+
+.footer_navigation.solcial_links {
+    margin-left: 50px;
+}
+
+.footer_icons ul li a i {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.50s ease;
+}
+
+.footer_icons ul li a i:hover {
+    color: red;
+    background: white;
+    transform: translateY(-10px);
+    transition: 0.50s ease;
+}
+
+.footer_navigation h6 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: red;
+    font-weight: 700;
+    margin: 10px 0px 41px;
+}
+
+.footer_navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer_navigation ul li a {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.50s ease;
+}
+
+.footer_navigation ul li a:hover {
+    color: red;
+    transition: 0.50s ease;
+}
+
+/* inner banner start*/
+.main_inner_banner_bg {
+    background: url(../images/inner-banner-bg.png) center center/cover no-repeat;
+    height: 312px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.inner_banner_content h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+
+.inner_banner_content ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: center;
+}
+
+.inner_banner_content ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.inner_banner_content ul li span a {
+    color: red;
+}
+
+.about_us_content.main_about_content p {
+    text-align: justify;
+}
+
+.inner_banner_icon1 {
+    position: absolute;
+    top: 70px;
+    right: 300px;
+}
+
+.inner_banner_icon2 {
+    position: absolute;
+    bottom: 110px;
+    left: 300px;
+    transform: rotate(180deg);
+}
+
+/* inner banner end*/
+
+/* Past sales start */
+.sold_house_heading h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sold_house_heading p {
+    width: 80%;
+    margin: 10px auto 50px;
+    color: gray;
+}
+
+.main_sold_house {
+    padding: 100px 0px;
+}
+
+.sold_house_card_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.sold_house_card_content h5 {
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.sold_house_card_content p {
+    margin: 0px 13px;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sold_house_card_content span {
+    font-size: 22px;
+    font-weight: 500;
+    margin-left: 288px;
+}
+
+.sold_house_card_content ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+    margin-left: 15px;
+}
+
+.sold_house_card_content ul span {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.sold_house_card_content ul p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: gray;
+}
+
+.sold_house_card_line {
+    background: darkgray;
+    height: 1px;
+    margin: 10px 15px 20px;
+}
+
+.sold_house_card {
+    border: none;
+    transition: 0.50s ease;
+}
+
+.sold_house_card_content {
+    padding: 10px 0px;
+    box-shadow: 0px 6px 20px -10px;
+    border: 1px solid #a9a9a93b;
+    border-top: navajowhite;
+}
+
+.sold_house_card:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1), 0px 165px 66px rgba(0, 0, 0, 0.01), 0px 93px 56px rgba(0, 0, 0, 0.05), 0px 41px 41px rgba(0, 0, 0, 0.09), 0px 10px 23px rgba(0, 0, 0, 0.1);
+    transition: 0.50s ease;
+}
+
+/* Past sales end */
+
+/* Listing Start */
+.accordion-button:not(.collapsed)::after {
+    content: "\f078";
+    font-family:  FontAwesome;
+    background-image: unset;
+    color: red;
+}
+.accordion-button::after {
+    content: "\f077";
+    font-family:  FontAwesome;
+    color: blue;
+    background-image: unset;
+}
+.listing_filter_icos {
+    box-shadow: 0px 0px 15px -7px;
+    margin-bottom: 70px;
+    padding: 10px;
+}
+button.accordion-button:focus {
+    outline: none;
+}
+
+button.accordion-button:focus {
+    box-shadow: none;
+}
+.main_grid_list ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+}
+
+.main_grid_list ul span {
+    font-size: 23px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.main_grid_list ul i {
+    font-size: 24px;
+    color: red;
+}
+
+.main_grid_list ul li:nth-child(3) {
+    border-left: 1px solid darkgray;
+}
+
+.main_grid_list p {
+    margin: 0;
+    margin-left: 20px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.short_by_latest ul {
+    padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+}
+
+.short_by_latest ul li p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sarch_properties_icon input {
+    width: 100%;
+    border: 1px solid darkgray;
+    background: transparent;
+    padding: 15px 50px;
+    border-radius: 8px;
+    outline: n;
+    margin-bottom: 5px;
+}
+
+.sarch_properties_icon {
+    position: relative;
+}
+
+.sarch_properties_icon i {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 29px;
+    color: darkgray;
+}
+
+.sarch_properties_icon input::placeholder {
+    color: black;
+    font-size: 18px;
+}
+
+button.accordion-button.collapsed {
+    background: #fffbf2;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    color: gray;
+    margin-top: 6px;
+    border-top: 1px solid darkgray;
+}
+
+.accordion-item {
+    background: #fffbf2;
+    width: 100%;
+    border: 1px solid darkgray;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+    background: transparent;
+    color: black;
+    border-top: 1px solid darkgray;
+    border-radius: 9px;
+}
+
+.main_listing_search_properties {
+    border: none;
+    padding: 30px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px -3px;
+}
+
+.main_listing_sec {
+    padding: 100px 0px;
+}
+
+.sarch_properties_range_bar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.sarch_properties_range_bar ul li span {
+    border-bottom: 1px solid darkgray;
+    color: gray;
+    font-size: 17px;
+}
+
+.sarch_properties_range_bar input {
+    margin: 30px 0px 20px;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border: none;
+    color: gray;
+}
+
+.sold_house_card.listing_sold_house_card {
+    position: relative;
+    overflow: hidden;
+}
+
+.sold_house_card_sell {
+    position: absolute;
+    top: 4px;
+    right: -19px;
+    transform: rotate(45deg);
+}
+
+.sold_house_card_sell h6 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    background: black;
+    padding: 3px 20px;
+}
+
+/* Listing End */
+/* Home valuation  Start*/
+.property_valuation_content h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: revert;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.property_valuation_img img {
+    width: 100%;
+}
+
+.property_valuation_img {
+    margin-top: 80px;
+}
+
+.property_valuation_content p {
+    color: gray;
+}
+
+.main_property_valuation {
+    padding: 100px 0px;
+}
+
+/* Home valuation  End*/
+/* Contact Us Start */
+.main_contact_us {
+    background: url(../images/contact_us_bg.png) center center/cover no-repeat;
+    padding: 100px 0px;
+}
+.contact_us input {
+    width: 100%;
+    border: none;
+    padding: 18px 20px;
+    background: #00000045;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+}
+
+.contact_us label {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 40px 10px 10px;
+}
+.contact_us textarea {
+    width: 100%;
+    border: none;
+    padding: 18px 20px;
+    background: #00000045;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    resize: none;
+}
+.contact_us a {
+    border: 1px solid #0000008c;
+    color: black;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+.contact_us_heading h6 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.contact_us_heading h1 {
+    font-size: 70px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+/* Contact Us End */
